@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Абоненты">
+      <EntityTypeMapping TypeName="Model.Абоненты">
+        <MappingFragment StoreEntitySet="Абоненты">
+          <ScalarProperty Name="Код_абонента" ColumnName="Код_абонента" />
+          <ScalarProperty Name="Код_ТелефонАбонента" ColumnName="Код_ТелефонАбонента" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="Адрес" ColumnName="Адрес" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Город">
+      <EntityTypeMapping TypeName="Model.Город">
+        <MappingFragment StoreEntitySet="Город">
+          <ScalarProperty Name="Код_города" ColumnName="Код_города" />
+          <ScalarProperty Name="Код_тарифа" ColumnName="Код_тарифа" />
+          <ScalarProperty Name="Название_города" ColumnName="Название_города" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Разговоры">
+      <EntityTypeMapping TypeName="Model.Разговоры">
+        <MappingFragment StoreEntitySet="Разговоры">
+          <ScalarProperty Name="Код_разговора" ColumnName="Код_разговора" />
+          <ScalarProperty Name="Код_ТелефонаАбонента" ColumnName="Код_ТелефонаАбонента" />
+          <ScalarProperty Name="Код_города" ColumnName="Код_города" />
+          <ScalarProperty Name="Дата_разговора" ColumnName="Дата_разговора" />
+          <ScalarProperty Name="Время_разговора" ColumnName="Время_разговора" />
+          <ScalarProperty Name="Оплата" ColumnName="Оплата" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Таблица1">
+      <EntityTypeMapping TypeName="Model.Таблица1">
+        <MappingFragment StoreEntitySet="Таблица1">
+          <ScalarProperty Name="Номер_абонента" ColumnName="Номер_абонента" />
+          <ScalarProperty Name="ФИО_Абонента" ColumnName="ФИО_Абонента" />
+          <ScalarProperty Name="Адрес" ColumnName="Адрес" />
+          <ScalarProperty Name="Номер_телефона" ColumnName="Номер_телефона" />
+          <ScalarProperty Name="Номер_договора" ColumnName="Номер_договора" />
+          <ScalarProperty Name="Дата_установки_телефона" ColumnName="Дата_установки_телефона" />
+          <ScalarProperty Name="Номер_разговора" ColumnName="Номер_разговора" />
+          <ScalarProperty Name="Дата_разговора" ColumnName="Дата_разговора" />
+          <ScalarProperty Name="Время_разговора" ColumnName="Время_разговора" />
+          <ScalarProperty Name="Код_города" ColumnName="Код_города" />
+          <ScalarProperty Name="Название_города" ColumnName="Название_города" />
+          <ScalarProperty Name="Тариф_стоимость_1мин" ColumnName="Тариф_стоимость_1мин" />
+          <ScalarProperty Name="Оплаты" ColumnName="Оплаты" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Тарифы">
+      <EntityTypeMapping TypeName="Model.Тарифы">
+        <MappingFragment StoreEntitySet="Тарифы">
+          <ScalarProperty Name="Код_тарифа" ColumnName="Код_тарифа" />
+          <ScalarProperty Name="Тариф" ColumnName="Тариф" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Телефоны_абонентов">
+      <EntityTypeMapping TypeName="Model.Телефоны_абонентов">
+        <MappingFragment StoreEntitySet="Телефоны_абонентов">
+          <ScalarProperty Name="Телефоны_абонентов1" ColumnName="Телефоны_абонентов" />
+          <ScalarProperty Name="Код_разговора" ColumnName="Код_разговора" />
+          <ScalarProperty Name="Номер_телефона" ColumnName="Номер_телефона" />
+          <ScalarProperty Name="Номер_договора" ColumnName="Номер_договора" />
+          <ScalarProperty Name="Дата_установки_телефона" ColumnName="Дата_установки_телефона" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
